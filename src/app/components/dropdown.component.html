@@ -1,0 +1,3 @@
+<select class="form-control" #select (change)="click(select.value)">
+          <option *ngFor="let item of allOption" [value]="item.id">{{item.name}}</option>
+</select>
