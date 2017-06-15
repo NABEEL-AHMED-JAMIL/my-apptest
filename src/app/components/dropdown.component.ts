@@ -7,7 +7,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 export class DropDownComponent {
     // this get the data from the main compoent 
-    @Input() allOption: Array<any> = [];
+    @Input() public allOption: Array<any> = [];
     //
     @Output() public select = new EventEmitter();
 

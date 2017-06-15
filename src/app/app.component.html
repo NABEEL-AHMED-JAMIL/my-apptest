@@ -1,5 +1,5 @@
-<h1>
-    {{title}}
+<h1 *ngIf="selectedValue">
+    {{selectedValue.name}}
 </h1>
 
 <drop-down [allOption]="allOption" (select)="getSelectedValue($event)"></drop-down>
